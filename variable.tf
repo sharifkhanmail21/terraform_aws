@@ -1,8 +1,8 @@
-# Variable "aws-region" {
-#   description = "Configure AWS Region"
-#   type = string
-#   default = "ap-sourth-a"
-# }
+variable "aws-region" {
+   description = "Configure AWS Region"
+   type = string
+   default = "ap-sourth-a"
+ }
 
 # Variable "user-name" {
 #   description = "IAM User"
