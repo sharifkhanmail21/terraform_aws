@@ -3,6 +3,7 @@ Variable "aws-region" {
   type = string
   default = "ap-sourth-a"
 }
+
 Variable "user-name" {
   description = "IAM User"
   type = list(string)
