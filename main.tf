@@ -5,9 +5,18 @@
 #   #Key should be store in file and give reference
 # }
 
+terraform {
+  required_providers {
+    aws = {
+      source  = "hashicorp/aws"
+      version = "~> 5.0"
+    }
+  }
+}
+
 provider "aws" {
-  shared_config_files      = "C://Users/shari/.aws/config"
-  shared_credentials_files = "C://Users/shari/.aws/credentials"
+  shared_config_files      = "C:\Users\shari\.aws/config"
+  shared_credentials_files = "C:\Users\shari\.aws/credentials"
   profile                  = "techlab"
 }
 
