@@ -1,12 +1,12 @@
-# resource "aws_s3_bucket" "first_bucket" {
-#   bucket	= "sreterraform"
-#   acl		= "private"
-#   tags		= {
-#     Name		= "s3.terraform-demo"
-#     Environment		= "testing"
-#   }
-# }
+#S3 Bucket Configuration
+resource "aws_s3_bucket" "techt-lb-logs" {
+  bucket	= "techt-lb-logs"
+  tags		= {
+    Name		= "LB Log"
+    Environment		= "Lab"
+  }
+}
 
-# output "s3ucketOutput" {
-#   value = aws_s3_bucket.first_bucket.id
-# }
+output "s3ucketOutput" {
+  value = aws_s3_bucket.techt-lb-logs.id
+}
