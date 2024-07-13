@@ -1,7 +1,7 @@
 provider "aws" {
    region     = "ap-south-1"
-   access_key = "Access Key"
-   secret_key = "Secret Key"
+   access_key = "access-key"
+   secret_key = "secret-key"
    #Key should be store in file and give reference
 }
 
